@@ -6,30 +6,35 @@
     <meta name="description" content="Personal profile page for Amos Mumba, a third-year Computer Science student and software developer.">
     <title>Amos Mumba | Personal Profile</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Page header and simple in-page navigation. -->
-    <header>
-        <div class="container">
-            <p class="eyebrow">Personal Profile</p>
-            <h1>Amos Mumba</h1>
-            <p class="tagline">Third-year Computer Science student building simple, reliable software.</p>
+    <!-- Page header and in-page navigation. -->
+    <header id="top">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="container nav-content">
+                <a class="brand" href="#top">AM</a>
 
-            <nav aria-label="Primary navigation">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+
+        <div class="container hero">
+            <p class="eyebrow">Personal Profile</p>
+            <h1>Amos Mumba</h1>
+            <p class="tagline">Third-year Computer Science student building simple, reliable software.</p>
         </div>
     </header>
 
-    <!-- Main content follows the Week 3 semantic HTML5 structure. -->
+    <!-- Main content. -->
     <main class="container" id="main-content">
         <article id="about">
             <div class="profile-intro">
@@ -39,7 +44,7 @@
                 </div>
 
                 <figure>
-                    <img src="profile.JPG" alt="Portrait of Amos Mumba" width="200" height="200">
+                    <img src="https://unavatar.io/linkedin/amos-mumba-2b9454305" alt="Portrait of Amos Mumba" width="200" height="200">
                     <figcaption>Amos Mumba - Year 3 Computer Science Student</figcaption>
                 </figure>
             </div>
@@ -71,20 +76,35 @@
                 <ol>
                     <li>Data Structures and Algorithms</li>
                     <li>Database Systems</li>
-                    <li>Web Development</li>
+                    <li>Discrete and Statistical Mathematics</li>
                 </ol>
             </section>
         </article>
 
-        <!-- Sidebar keeps links and school details easy to scan. -->
+        <!-- Sidebar links and school details. -->
         <aside id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact &amp; Links</h2>
             <p>I am open to internships, junior developer roles, collaborations, and practical software projects.</p>
 
             <ul class="links">
-                <li><a href="https://github.com/Amos-Mumba" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/amos-mumba-2b9454305" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="mailto:amumba0310@gmail.com">Email</a></li>
+                <li>
+                    <a href="https://github.com/Amos-Mumba" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/amos-mumba-2b9454305" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:amumba0310@gmail.com">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Email
+                    </a>
+                </li>
             </ul>
 
             <dl>
@@ -101,11 +121,12 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container footer-content">
             <p>
                 &copy; 2026 Amos Mumba. Contact:
                 <a href="mailto:amumba0310@gmail.com">amumba0310@gmail.com</a>
             </p>
+            <a href="#top">Back to top</a>
         </div>
     </footer>
 </body>
